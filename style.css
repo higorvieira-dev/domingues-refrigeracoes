@@ -255,135 +255,155 @@ header ul li a:hover{
   margin-bottom: 30%;
   padding: 10%;
 }
+.section {
+  margin-top: 30px;
+  left: 0;
+  bottom: 12px;
+  width: 100%;
+  /*background: #29277a;*/
+  background: black;
+  padding-top: 60px;
+}
+
+footer.top > img {
+  height: 50px;
+  margin: 0 auto 50px;
+}
+
 footer {
-    background: #000;
-    color: #fff;
-    margin-top: 15%;
-    bottom: 0px;
+  position: relative;
+  margin: 0 30px;
+  color: rgb(255 255 255 / 50%);
+}
+
+footer.top {
+  display: grid;
+  border-bottom: 2px solid rgb(255 255 255 / 20%);
+  padding-bottom: 20px;
+}
+
+footer.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  gap: 8px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer.top .links {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.links-column {
+  display: grid;
+  gap: 10px;
+  text-align: center;
+}
+
+footer h2 {
+  margin: 0 0 10px;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgb(255 255 255 / 96%);
+}
+
+footer p {
+  margin: 0;
+}
+
+.legal > a {
+  margin: 0 0 0 4px;
+}
+
+.legal,
+.copyright {
+  font-size: 12px;
+}
+
+.legal > span {
+  margin-right: 10px;
+}
+
+footer.top .socials {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  translate: -50% 0;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  height: 56px;
+}
+
+footer.top .socials > a {
+  font-size: 24px;
+  list-style: none;
+  text-decoration: none;
+  color: rgb(255 255 255 / 96%);
+}
+
+.socials-column :is(h2, p) {
+  display: none;
+}
+
+@media (width > 400px) {
+  .links-column {
+    text-align: left;
+  }
+
+  footer.top .links {
+    grid-template-columns: repeat(2, 1fr);
+    margin-right: 50px;
+  }
+
+  footer.bottom {
     display: flex;
     align-items: center;
-    flex-direction: column;
-  }
-  
-  .footer-wrapper {
-    display: flex;
-    flex-direction: column;
-
-    padding: 16px;
-  }
-  
-  
-  /*? top section */
-  .footer-top {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    align-items: start;
-    padding: 16px 0px;
     justify-content: space-between;
-  }
-  
-  /*? footer columns */
-  .footer-columns {
-    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: start;
-    align-items: start;
-    flex: 2 0 140px;
-    width: 100%;
-    gap: 16px;
-    padding: 24px 8px 16px 8px;
-    margin: 0 auto;
-    border-top: 1px solid var(--text-gray);
+    gap: 20px;
+    text-align: left;
   }
-  
-  .footer-columns ul {
-    list-style-type: none;
+
+  footer.top .socials {
+    left: 0;
+    translate: 0;
+  }
+
+  footer.top > img {
+    margin: 0 0 50px;
+  }
+}
+
+@media (width >= 640px) {
+  footer {
+    margin: 0 auto;
+    max-width: 580px;
     padding: 0;
-    margin: 0;
-  }
-  
-  .footer-columns ul a {
-    color: #fff;
-    text-decoration: none;
-    list-style: none;
-  }
-  
-  .footer-columns ul a:hover{
-    text-decoration: underline;
-    color: #0299d5;
-  }
-  
-  .footer-columns ul li {
-    margin-bottom: 16px;
-  }
-  
-  .footer-columns h3 {
-    color: var(--footer-heading-gray);
-    margin-top: 0;
-    margin-bottom: 25px;
-    font-size: 1.125rem;
-  }
-  
-  .footer-centering {
-    margin: 0 auto;
-  }
-  
-  .footer-columns > section {
-    min-width: 150px;
-  }
-  
-  .footer-logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
-    min-width: 180px;
-    gap: 8px;
-  }
-  
-  .footer-logo > img {
-    stroke-width: 8px;
-    margin-bottom: 15px;
-    width: 150px;
-  }
-  
-  /*? Footer bottom */
-  
-  .footer-bottom {
-    text-align: center;
-    margin-top: 48px;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    gap: 8px;
-    padding: 16px 0px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  
-  .footer-bottom > small {
-    font-size: 16px;
-    margin: 0 4px;
-  }
-  
-  .footer-headline > h2 {
-    margin: 0px;
-  }
-  
-  .footer-headline > p {
-    margin: 12px 0px;
-  }
-  
-  .footer-subscribe button{
-    background: #ade8f4;
-    color: #0c0f0a;
   }
 
-.footer-columns section{
-    margin: 30px;
+  footer.top .links {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  footer.top .socials {
+    position: static;
+  }
+
+  footer.bottom {
+    justify-content: flex-start;
+  }
+
+  .socials-column :is(h2, p) {
+    display: block;
+  }
 }
 
 .container {
