@@ -22,23 +22,43 @@
 <body>
     <section class="main">
         <header id="inicio">
-            <div>
-                <h3 style="color: #fff; width: 100%; margin-top: 28px; font-family: 'Poppins', sans-serif;">DOMINGUES REFRIGERAÇÕES</h3>
+            <div class="doming">
+                <h3>DOMINGUES REFRIGERAÇÕES</h3>
             </div>
             <ul class="nav__list">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#"> Serviços</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicos"> Serviços</a></li>
                 <li><a href="#ares">Ar-Condicionado</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </header>
     </section>
-    <div class="content">
+    <div class="content" id="inicio">
         <h2>BEM-VINDO!</h2>
         <p>Aqui você encontra variedades de ar-condicionados</p>
-        <a href="">CONTATO</a>
-        <a href="">VERIFICAR OFERTAS</a>
-        
+        <button onclick="myFunction()">VERIFICAR OFERTAS</button>
+        <dialog id="myDialog">
+            <div class="carousel">
+                <div class="carousel-slides">
+                  <div class="slide">
+                  <a href=""><img src="img/ar1.png" alt="Slide 1"></a>
+                </div>
+                <div class="slide">
+                    <a href=""><img src="img/ar2.png" alt="Slide 2"></a>
+                </div>
+                <div class="slide">
+                    <a href=""><img src="img/ar4.png" alt="Slide 4"></a>
+                </div>
+                <div class="slide">
+                    <a href=""><img src="img/ar5.png" alt="Slide 5"></a>
+                </div>
+                <div class="slide">
+                    <a href=""><img src="img/ar6.png" alt="Slide 6"></a>
+                </div>
+                </div>
+              </div>
+              <p style="text-align: center;">basta apertar a tecla"ESC" para fechar essa janela.</p>
+        </dialog>
     </div>
     <div class="img-inicio">
         <img src="img/ar.png" class="img" style="width: 50%; margin-top: -20%;">
@@ -48,25 +68,27 @@
         <img src="img/circle.png">
         <h1>Transformamos qualquer ambiente no lugar ideal para você.</h1>
     </div>
-    <div class="ar9000">
-        <img src="img/9000.png" alt="">
-        <p>Ar-condicionado de 9000 BTUs ideal para ambientes de até 12 m². Com design compacto e moderno, oferece excelente desempenho e eficiência energética. Conta com funções como modo silencioso, timer, ventilação ajustável e controle remoto para maior praticidade. Perfeito para quem busca conforto térmico com economia.</p>
-        <a href="">Visualizar</a>
-    </div>
-    <div class="ar1200">
-        <img src="img/9000.png" alt="">
-        <p>Ar-condicionado de 12000 BTUs, perfeito para climatizar ambientes de até 20 m² com eficiência e conforto. Oferece design moderno, baixo consumo de energia e funcionalidades como modo silencioso, desumidificação, timer e controle remoto. Ideal para garantir bem-estar em dias quentes ou frios, com máxima praticidade.</p>
-        <a href="">Visualizar</a>
-    </div>
-    <div class="ar24000">
-        <img src="img/9000.png" alt="">
-        <p>Ar-condicionado de 24000 BTUs, ideal para climatizar ambientes amplos de até 40 m² com eficiência e rapidez. Com design moderno e sofisticado, oferece alto desempenho, baixo consumo de energia e funcionalidades avançadas, como controle remoto, timer, modo silencioso e desumidificação. Perfeito para quem busca conforto térmico com tecnologia de ponta.</p>
-        <a href="">Visualizar</a>
-    </div>
-    <div class="ar6000">
-        <img src="img/9000.png" alt="">
-        <p>Ar-condicionado de 60000 BTUs, ideal para ambientes compactos de até 9 m². Compacto e eficiente, proporciona conforto térmico com baixo consumo de energia. Conta com funções práticas, como controle remoto, timer, ventilação ajustável e modo silencioso, garantindo frescor e bem-estar em espaços menores.</p>
-        <a href="">Visualizar</a>
+    <div id="ares">
+        <div class="ar9000">
+            <img src="img/9000.png" alt="">
+            <p>Ar-condicionado de 9000 BTUs ideal para ambientes de até 12 m². Com design compacto e moderno, oferece excelente desempenho e eficiência energética. Conta com funções como modo silencioso, timer, ventilação ajustável e controle remoto para maior praticidade. Perfeito para quem busca conforto térmico com economia.</p>
+            <a href="">Visualizar</a>
+        </div>
+        <div class="ar1200">
+            <img src="img/9000.png" alt="">
+            <p>Ar-condicionado de 12000 BTUs, perfeito para climatizar ambientes de até 20 m² com eficiência e conforto. Oferece design moderno, baixo consumo de energia e funcionalidades como modo silencioso, desumidificação, timer e controle remoto. Ideal para garantir bem-estar em dias quentes ou frios, com máxima praticidade.</p>
+            <a href="">Visualizar</a>
+        </div>
+        <div class="ar24000">
+            <img src="img/9000.png" alt="">
+            <p>Ar-condicionado de 24000 BTUs, ideal para climatizar ambientes amplos de até 40 m² com eficiência e rapidez. Com design moderno e sofisticado, oferece alto desempenho, baixo consumo de energia e funcionalidades avançadas, como controle remoto, timer, modo silencioso e desumidificação. Perfeito para quem busca conforto térmico com tecnologia de ponta.</p>
+            <a href="">Visualizar</a>
+        </div>
+        <div class="ar6000">
+            <img src="img/9000.png" alt="">
+            <p>Ar-condicionado de 60000 BTUs, ideal para ambientes compactos de até 9 m². Compacto e eficiente, proporciona conforto térmico com baixo consumo de energia. Conta com funções práticas, como controle remoto, timer, ventilação ajustável e modo silencioso, garantindo frescor e bem-estar em espaços menores.</p>
+            <a href="">Visualizar</a>
+        </div>
     </div>
     <div class="outros">
         <img src="img/circle2.png" alt="">
@@ -75,6 +97,89 @@
         </p>
         <a href="">Verificar outros modelos</a>
     </div>
+
+
+
+
+
+    <div class="chart-container" id="servicos">
+        <h1 style="color: #fff;">SERVIÇOS</h1>
+        <div class="chart">
+            
+          <div class="bar" data-value="80">
+            <p style="color: #0299d5; font-size: 15px; font-family: 'Poppins', sans-serif;">LIMPEZA</p>
+            <span class="label" >Janeiro</span>
+            <span class="value">0%</span>
+          </div>
+          <div class="bar" data-value="65">
+            <p style="color: #0299d5; font-size: 15px; font-family: 'Poppins', sans-serif;">VISITA TECNICA</p>
+            <span class="label">Fevereiro</span>
+            <span class="value">0%</span>
+          </div>
+          <div class="bar" data-value="90">
+            <p style="color: #0299d5; font-size: 15px; font-family: 'Poppins', sans-serif;">MANUTENÇÃO</p>
+            <span class="label">Março</span>
+            <span class="value">0%</span>
+          </div>
+          <div class="bar" data-value="75">
+            <p style="color: #0299d5; font-size: 15px; font-family: 'Poppins', sans-serif;">LIMPEZA</p>
+            <span class="label">Abril</span>
+            <span class="value">0%</span>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="termos">
         <p>
             Na nossa loja, você encontra mais do que produtos: oferecemos uma experiência completa. Trabalhamos com as melhores marcas do mercado, garantindo qualidade e confiança. Além disso, nossos preços são competitivos, e contamos com condições especiais de pagamento. Nosso atendimento é personalizado, com uma equipe pronta para tirar suas dúvidas e ajudá-lo a encontrar a melhor solução para as suas necessidades. Com nossa garantia e suporte pós-venda, você pode comprar com total segurança e tranquilidade. Aqui, sua satisfação é nossa prioridade!
@@ -94,24 +199,24 @@
           <p>Precisa de ajuda? Nosso suporte está disponível 24/7.</p>
         </div>
       </div>
-    <section class="section">
+    <section class="section" id="contato">
         <footer class="top">
             
             <div class="links">
             <div class="links-column">
                 <h2>INICIO</h2>
-                <a href="">Introduction</a>
-                <a href="">Documentation</a>
-                <a href="">Usage</a>
-                <a href="">Globals</a>
-                <a href="">Elements</a>
+                <a href="">Introdução</a>
+                <a href="">Documentação</a>
+                <a href="">Uso</a>
+                <a href="">Global</a>
+                <a href="">Elementos</a>
             </div>
             <div class="links-column">
                 <h2>RECURSOS</h2>
                 <a href="">API</a>
-                <a href="">Visibility</a>
-                <a href="">Accessibility</a>
-                <a href="">Community</a>
+                <a href="">Visibilidade</a>
+                <a href="">Acessibilidade</a>
+                <a href="">Comercio</a>
                 <a href="">Marketplace</a>
             </div>
             <div class="links-column socials-column">
@@ -130,13 +235,13 @@
         <footer class="bottom">
             <p class="copyright">© 2024 All rights reserved | DevLog Software</p>
             <div class="legal">
-            <a href="" style="text-decoration: none; color: black;"> License </a>
-            <a href="" style="text-decoration: none; color: black;"> Terms </a>
-            <a href="" style="text-decoration: none; color: black;"> Privacy </a>
+            <a href="" style="text-decoration: none; color: black;"> Licença </a>
+            <a href="" style="text-decoration: none; color: black;"> Termos </a>
+            <a href="" style="text-decoration: none; color: black;"> Privacidade </a>
             </div>
         </footer>
         
     </section>
 </body>
-<!--<script src="animation.js"></script>-->
+<script src="animation.js"></script>
 </html>
