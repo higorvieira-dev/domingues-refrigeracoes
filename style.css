@@ -241,19 +241,28 @@ header ul li a:hover{
   background-color:#0299d5;
   transition-duration: 0.5s;
   color: #fff;
+  
 }
 
 .termos{
   margin: 50px auto;
+  color: #fff;
   background-color: #0299d5;
   text-align: center;
   width: 50%;
   border-radius: 5%;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 .termos p{
   margin-top: 30%;
   margin-bottom: 30%;
   padding: 10%;
+}
+.termos:hover{
+  transform: translateY(-5px);
+  
 }
 .section {
   margin-top: 30px;
@@ -480,23 +489,36 @@ footer.top .socials > a {
   padding: 5px 20px;
 }
 
-
-
-
-
-#myDialog{
-  padding: 15px 30px;
-  color: #000;
-  margin: 50px auto;
-  border-radius: 10px;
-  border: none;
-  font-size: 1.2em;
-  font-weight: bold;
-  text-decoration: none;
-  background-color: rgba(0, 0, 0, 0.1);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  border: none;
+.cards-container {
+  display: flex;
+  gap: 20px;
 }
-#myDialog p{
-  background-color: rgba(0, 0, 0, 0.0);
+
+.card {
+  background-color: #0299d5;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 50px auto;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1.5;
 }
