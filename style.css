@@ -15,7 +15,7 @@ header{
   width: 100%;
   padding: 30px 100px;
   display: flex;
-  background-color: rgba(0, 0, 0, 0.255);
+  background: rgba(0, 0, 0, 0.297);
 }
 .nav__list{
   margin-top: 30px;
@@ -261,7 +261,7 @@ header ul li a:hover{
   bottom: 12px;
   width: 100%;
   /*background: #29277a;*/
-  background: black;
+  background: rgba(0, 0, 0, 0.297);
   padding-top: 60px;
 }
 
@@ -273,7 +273,7 @@ footer.top > img {
 footer {
   position: relative;
   margin: 0 30px;
-  color: rgb(255 255 255 / 50%);
+  color: #000;
 }
 
 footer.top {
@@ -290,8 +290,12 @@ footer.bottom {
   gap: 8px;
   padding: 20px 0;
   text-align: center;
-}
 
+}
+.footer.bottom a{
+  list-style: none;
+  text-decoration: none;
+}
 footer.top .links {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -303,15 +307,20 @@ footer.top .links {
   display: grid;
   gap: 10px;
   text-align: center;
-}
 
+}
+.links-column a{
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+}
 footer h2 {
   margin: 0 0 10px;
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: rgb(255 255 255 / 96%);
+  color: #000;
 }
 
 footer p {
@@ -321,6 +330,7 @@ footer p {
 .legal > a {
   margin: 0 0 0 4px;
 }
+
 
 .legal,
 .copyright {
@@ -346,7 +356,7 @@ footer.top .socials > a {
   font-size: 24px;
   list-style: none;
   text-decoration: none;
-  color: rgb(255 255 255 / 96%);
+  color:#000
 }
 
 .socials-column :is(h2, p) {
