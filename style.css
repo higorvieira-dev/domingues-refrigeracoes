@@ -562,7 +562,7 @@ footer.top .socials > a {
   display: flex;
   width: 300%;
   height: 100%;
-  animation: slide 40s infinite;
+  animation: slide 20s infinite;
 }
 
 .slide {
